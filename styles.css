@@ -16,7 +16,7 @@ body{
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: radial-gradient(white 10%, var(--orange) 100%) no-repeat;
+  background: radial-gradient(white 10%, rgb(240, 240, 240) 100%) no-repeat;
   height: 100vh;
 }
 main{
@@ -30,9 +30,16 @@ main{
 h1{
   color: rgb(253, 253, 253);
   font-weight: bold;
-  margin: 50px 0 150px 0;
+  margin: 50px 0 30px 0;
   font-weight: bold;
   font-size: 4rem;
+}
+.city-name{
+  color: var(--darkblue);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  opacity: 0;
 }
 input{
   height: 50px;
@@ -60,5 +67,24 @@ input{
 
 .future-forecast{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  
+}
+.current-forecast img{
+  width: 140px;
+  height: 140px;
+}
+.current-forecast p{
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: whitesmoke;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.future-forecast img{
+  width: 80px;
+  height: 80px;
+}
+.future-forecast p{
+  margin-bottom: 5px;
 }
