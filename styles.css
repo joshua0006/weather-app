@@ -26,6 +26,7 @@ main{
   width: 40%;
   height: 700px;
   border-radius: 30px;
+  overflow: hidden;
 }
 h1{
   color: rgb(253, 253, 253);
@@ -43,7 +44,7 @@ h1{
 }
 input{
   height: 50px;
-  width: 300px;
+  width: 50%;
   font-size: 1.2rem;
   border-radius: 5px;
   border: none;
@@ -66,9 +67,9 @@ input{
 }
 
 .future-forecast{
-  display: flex;
-  justify-content: space-evenly;
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 140px);
+  justify-content: center;
 }
 .current-forecast img{
   width: 140px;
